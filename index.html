@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <title>Home | KIST College</title>
 </head>
 
@@ -19,8 +20,20 @@
             </div>
             <ul id="menulist">
                 <li><a id="home" href="index.html">Home</a></li>
-                <li><a id="programs" href="">Programs</a></li>
-                <li><a id="messages" href="">Messages</a></li>
+                <li><a id="programs" href="">Programs <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown1">
+                        <ul >
+                            <li class="bit"><a href="bit.html">BIT</a></li>
+                            <li class="bim"><a href="mit.html">MIT</a></li>
+                        </ul>
+                </li>
+                <li><a id="messages" href="">Admissions <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown2">
+                        <ul >
+                            <li class="ap"><a href="admission.html">Admission Programmes</a></li>
+                            <li class="sc"><a href="scholarship.html">Scholarship</a></li>
+                        </ul>
+                </li>
             </ul>
             <div class="dashButton">
                 <button onclick="toggleMenu()">
