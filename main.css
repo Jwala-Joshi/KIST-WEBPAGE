@@ -140,19 +140,6 @@ ul li:hover .dropdown2
     color: white;
 } 
 
-.dashButton {
-    display: none;
-}
-
-.dashButton button {
-    height: 6rem;
-    width: 6rem;
-    font-size: 3rem;
-    border: none;
-    background-color: hsl(188, 63%, 72%);
-    margin-right: 10px;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -236,84 +223,4 @@ nav {
 .yt,
 .ig{
     margin: 5px;
-}
-
-
-@media only screen and (max-width: 650px)
-{
-    .contact
-    {
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .buttons {
-        width: 18vw;
-    }
-}
-
-@media only screen and (max-width: 960px) 
-{
-    .dashButton {
-        display: block;
-    }
-
-    #menulist {
-        position: absolute;
-        border: 2 px solid;
-        top: 4.5rem;
-        right: 10vw;
-        left: 10vw;
-        width: 80vw;
-        display: flex;
-        height: 80vh;
-        flex-direction: column;
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.413);
-        z-index: 999;
-        transition: all 1s;
-    }
-
-    #menulist ul {
-        font-size: 3vh;
-    }
-
-    #menulist li a {
-        color: white;
-    }
-
-    nav {
-        height: 6rem;
-    }
-
-    .logo img {
-        width: 5.5rem;
-        height: 5.5rem;
-        border-radius: 3.5rem;
-    }
-
-    .dropdown1 ul li ,.dropdown2 ul li {
-        font-size: px;
-        color: hsl(188, 98%, 84%);
-    }
-
-    ul li:hover .dropdown1 ,  ul li .dropdown2{
-        display: block;
-        position: absolute;
-        width: 500%;
-        left: -200%;
-        top: 130%;
-        z-index: 999;
-        background-color: hsla(0, 0%, 0%, 0.712);
-        font-size: 2vh;
-    }
-
-    ul li:hover .dropdown1 ,ul li:hover .dropdown2
-    {
-        padding-left: 150%;
-        left: -150%;
-        top: -220%;
-        font-size: 2vh;
-    }
 }
