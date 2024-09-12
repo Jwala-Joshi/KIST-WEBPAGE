@@ -45,14 +45,13 @@ html{
     text-decoration: none;
     color:black;
     padding: 1rem;
+    border: 5rem;
 }
 
-#home:hover,
-#programs:hover,
-#messages:hover {
+#menulist li a:hover {
     color: white;
     background-color: rgb(37, 112, 149);
-    border-radius: 3.5rem;
+    border-radius: 2rem;
     padding: 1rem;
     transform: scale(1.2);
 }
@@ -70,11 +69,11 @@ ul li:hover .dropdown1
 {
     display: block;
     position: absolute;
+    border-radius: 2rem;
     left: 0;
-    top: 130%;
+    top: 100%;
     z-index: 999;
     background-color: hsl(188, 98%, 84%);
-    ;
 }
 
 .dropdown1 ul
@@ -112,10 +111,10 @@ ul li:hover .dropdown2
     position: absolute;
     width: 20vw;
     left: -6vw;
-    top: 130%;
+    border-radius: 2rem;
+    top: 100%;
     z-index: 999;
     background-color: hsl(188, 98%, 84%);
-    ;
 }
 
 .dropdown2 ul
@@ -160,7 +159,7 @@ nav {
     justify-content: space-between;
     height: 10rem;
     margin-top: 0;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
     background-color: hsl(188, 82%, 53%);
     border: none;
 }
@@ -237,4 +236,84 @@ nav {
 .yt,
 .ig{
     margin: 5px;
+}
+
+
+@media only screen and (max-width: 650px)
+{
+    .contact
+    {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .buttons {
+        width: 18vw;
+    }
+}
+
+@media only screen and (max-width: 960px) 
+{
+    .dashButton {
+        display: block;
+    }
+
+    #menulist {
+        position: absolute;
+        border: 2 px solid;
+        top: 4.5rem;
+        right: 10vw;
+        left: 10vw;
+        width: 80vw;
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.413);
+        z-index: 999;
+        transition: all 1s;
+    }
+
+    #menulist ul {
+        font-size: 3vh;
+    }
+
+    #menulist li a {
+        color: white;
+    }
+
+    nav {
+        height: 6rem;
+    }
+
+    .logo img {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 3.5rem;
+    }
+
+    .dropdown1 ul li ,.dropdown2 ul li {
+        font-size: px;
+        color: hsl(188, 98%, 84%);
+    }
+
+    ul li:hover .dropdown1 ,  ul li .dropdown2{
+        display: block;
+        position: absolute;
+        width: 500%;
+        left: -200%;
+        top: 130%;
+        z-index: 999;
+        background-color: hsla(0, 0%, 0%, 0.712);
+        font-size: 2vh;
+    }
+
+    ul li:hover .dropdown1 ,ul li:hover .dropdown2
+    {
+        padding-left: 150%;
+        left: -150%;
+        top: -220%;
+        font-size: 2vh;
+    }
 }
